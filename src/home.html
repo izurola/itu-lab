@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/src/style.css" />
     <title>"СӨХ" дуудлага өгөх</title>
 </head>
-
 <body>
     <div class="container">
-        <form action="#" id="registrationForm" method="post">
+        <form id="registrationForm"  action="#"  method="post">
             <h1>Сууц өмчлөгчдийн холбоо</h1>
             <div class="textbox">
                 <label for="district">Дүүрэг: </label>
-                <select name="district" class="right">
+                <select id="district" name="district" class="right">
                     <option value="bra">Багануур</option>
                     <option value="bgh">Багахангай</option>
                     <option value="bgl">Баянгол</option>
@@ -28,7 +29,7 @@
             </div>
             <div class="textbox">
                 <label for="committee">Хороо: </label>
-                <select name="committee" class="right">
+                <select id="committee" name="committee" class="right">
                     <option value="1">1-р хороо</option>
                     <option value="2">2-р хороо</option>
                     <option value="3">3-р хороо</option>
@@ -58,6 +59,7 @@
                </a>
         </form>
         <script src="/src/script.js"></script>"
+    </form>
     </div>
 </body>
 
