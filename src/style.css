@@ -55,6 +55,12 @@ textarea
   line-height: 1.9
 }
 
+.right {
+  margin-top: 12px;
+  display: inline-block;
+  
+  
+}
 
 
 
