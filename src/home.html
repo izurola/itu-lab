@@ -9,62 +9,57 @@
 </head>
 
 <body>
-    <div class="body">
-        <h1 class="center">"СӨХ"-ийн дуудлага</h1>
+    <div class="register-box">
+        <form action="#" id="registrationForm" method="post">
+            <h1 class="center">"СӨХ"-ийн дуудлага</h1>
+            <div class="textbox">
+                <label for="district">Дүүрэг</label>
+                <select name="district">
+                    <option value="bra">Багануур</option>
+                    <option value="bgh">Багахангай</option>
+                    <option value="bgl">Баянгол</option>
+                    <option value="bzr">Баянзүрх</option>
+                    <option value="nal">Налайх</option>
+                    <option value="son">Сонгинохайрхан</option>
+                    <option value="suh">Сүхбаатар</option>
+                    <option value="han">Хан-Уул</option>
+                    <option value="chg">Чингэлтэй</option>
+                </select>
+            </div>
+            <div class="textbox">
+                <label for="committee">Хороо</label>
+                <select name="committee">
+                    <option value="1">1-р хороо</option>
+                    <option value="2">2-р хороо</option>
+                    <option value="3">3-р хороо</option>
+                    <option value="4">4-р хороо</option>
+                    <option value="5">5-р хороо</option>
+                    <option value="6">6-р хороо</option>
+                    <option value="7">7-р хороо</option>
+                    <option value="8">8-р хороо</option>
+                    <option value="9">9-р хороо</option>
+                    <option value="10">10-р хороо</option>
+                </select>
+            </div>
+            <div class="bt">
+                <label for="appartment">Байр :</label>
+                <input type="text" id="appartment" name="appartment">
+            </div>
+            <div class="bt">
+                <label for="room">Тоот :</label>
+                <input type="text" id="room" name="room">
+            </div>
+            <div class="bt">
+                <label for="problem">Асуудал :</label>
+                <textarea name="problem" id="prblem" cols="30" rows="10"></textarea>
+            </div>
+            <a href="/src/order.html">
+                <button type="button" class="button">
+                   Захиалах
+                </button>
+               </a>
+        </form>
     </div>
-    <br>
-
-    <div class="select">
-        <select name="district">
-            <option disabled selected value>Дүүрэг сонгоно уу?</option>
-            <option value="bra">Багануур</option>
-            <option value="bgh">Багахангай</option>
-            <option value="bgl">Баянгол</option>
-            <option value="bzr">Баянзүрх</option>
-            <option value="nal">Налайх</option>
-            <option value="son">Сонгинохайрхан</option>
-            <option value="suh">Сүхбаатар</option>
-            <option value="han">Хан-Уул</option>
-            <option value="chg">Чингэлтэй</option>
-        </select>
-        <br><br>
-        <select name="district">
-            <option disabled selected value>Хороо сонгоно уу?</option>
-            <option value="1">1-р хороо</option>
-            <option value="2">2-р хороо</option>
-            <option value="3">3-р хороо</option>
-            <option value="4">4-р хороо</option>
-            <option value="5">5-р хороо</option>
-            <option value="6">6-р хороо</option>
-            <option value="7">7-р хороо</option>
-            <option value="8">8-р хороо</option>
-            <option value="9">9-р хороо</option>
-            <option value="10">10-р хороо</option>
-        </select>
-        <br><br>
-        <div class="bt">
-          <label for="bair">Байр :</label>
-          <input type="text" id="bair" name="bair">
-          <br><br>
-          <label for="toot">Тоот :</label>
-          <input type="text" id="toot" name="toot">
-        </div>
-        <br><br>
-        <div class="asuudal">
-        <p>Асуудал:</p>
-        <br>
-        <label for="asuudal"></label>
-        <textarea rows="4" cols="25" name="comment" form="usrform">Гарсан асуудлаа бичнэ үү?
-        </textarea>
-        </div>
-    </div>
-    <br>
-    <a href="/src/order.html">
-     <button type="button" class="button">
-        Захиалах
-     </button>
-    </a>
-
 </body>
 
 </html>
