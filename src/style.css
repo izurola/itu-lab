@@ -28,6 +28,8 @@ body
 h1
 {
     color: black;
+    background-color: darkolivegreen;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-family:"Times New Roman", Times, serif;
 }
@@ -43,7 +45,7 @@ textarea
 
 .textbox
 {
-  margin-left:220px;
+  /* margin-left:220px; */
   width: 100%;
   display: inline-block;
 }
@@ -51,15 +53,20 @@ textarea
 .textbox label {
   float: left;
   font-size: 20px;
+  margin-left: 195px;
   text-align: justify;
   line-height: 1.9
 }
 
 .right {
-  margin-top: 12px;
-  display: inline!important;
-  display: block;
+  float: right;
+  margin-top: 12px; 
+  /* display: block; */
   width: 40%;
+  margin-right: 195px;
+  /* place-items: center; */
+
+
   
   
 }
@@ -75,14 +82,21 @@ textarea
 }
 
 .button {
-    color: grey;
+  
+    border-radius: 12px;
     padding: 20px 32px;
     margin-top: 35px;
     text-align: center;
     font-size: 20px;
     cursor: pointer;
     margin-left: 40%;
-  }
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: olive;
+  transition: 0.7s;
+}
 
 .select
   {
