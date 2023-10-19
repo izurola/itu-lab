@@ -9,7 +9,7 @@ body
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 300px;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
@@ -62,7 +62,7 @@ textarea
 
 .select
   {
-    margin-left: 70%;
+    margin-left: 50%;
     padding-top: 50px;
   }
 
