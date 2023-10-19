@@ -7,7 +7,7 @@ body
 
 .container {
   width: 80%;
-  max-width: 800px;
+  max-width: 770px;
   margin: 0 auto;
   margin-top: 280px;
   padding: 50px;
@@ -38,6 +38,7 @@ h1
     text-align: center;
     font-family:"Times New Roman", Times, serif;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
     
 }
 
@@ -60,8 +61,7 @@ textarea
 .textbox label {
   float: left;
   font-size: 20px;
-  margin-left: 195px;
-  text-align: justify;
+  margin-left: 175px;
   line-height: 1.9
 }
 
