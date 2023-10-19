@@ -5,6 +5,26 @@ body
   height: 900px;
 }
 
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fade 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h1
 {
     color: blue;
@@ -42,7 +62,7 @@ textarea
 
 .select
   {
-    margin-left: 45%;
+    margin-left: 70%;
     padding-top: 50px;
   }
 
