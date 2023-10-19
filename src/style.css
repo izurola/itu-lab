@@ -57,7 +57,9 @@ textarea
 
 .right {
   margin-top: 12px;
-  display: inline-block;
+  display: inline!important;
+  display: block;
+  width: 40%;
   
   
 }
