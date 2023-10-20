@@ -138,7 +138,9 @@ function validateForm() {
     }
 
     if (committee === "") {
-        alert("Committee must be filled out");
+        var alert = document.getElementsByName("alert");
+        alert[0].innerHTML = "Committee must be filled out";
+        
         return false;
     }
 
@@ -154,7 +156,7 @@ function validateForm() {
     }
     
     alert("You have successfully registered!");
-    return true; // Allow the form to submit
+    return true;
 }
 
 
