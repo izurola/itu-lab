@@ -42,18 +42,21 @@ h1
     
 }
 
-h3 {
-  
-}
-textarea
-{
+textarea {
   font-size: 15px;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  height: fit-content;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  resize: none;
 }
 
 .textbox
 {
-  /* margin-left:220px; */
   width: 100%;
   display: inline-block;
 }
@@ -61,7 +64,7 @@ textarea
 .textbox label {
   float: left;
   font-size: 20px;
-  margin-left: 175px;
+  margin-left: 185px;
   line-height: 1.9
 }
 
@@ -70,18 +73,13 @@ textarea
   margin-top: 12px; 
   /* display: block; */
   width: 40%;
-  margin-right: 195px;
+  margin-right: 185px;
   /* place-items: center; */
-
-
-  
-  
 }
 
 
 
-.center
-{
+.center{
     margin: auto;
     width: 50%;
     /* border: 4px solid blue; */
@@ -105,16 +103,3 @@ textarea
   transition: 0.7s;
 }
 
-.select
-  {
-    margin-left: 30%;
-    padding-top: 50px;
-  }
-
-.bt {
-  padding-top: 15px;
-}
-
-.asuudal {
-
-}
