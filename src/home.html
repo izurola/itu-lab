@@ -3,25 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/src/style.css" />
     <title>"СӨХ" дуудлага өгөх</title>
 </head>
-
 <body>
     <div class="container">
-        
-        <form action="#" id="registrationForm" method="post">
-            <h1>"СӨХ"-ийн дуудлага</h1>
+        <form id="registrationForm"  action="/src/order.html" method="post">
+            <h1>Сууц өмчлөгчдийн холбоо</h1>
             <div class="textbox">
-                <label for="district">Дүүрэг</label>
-                <select id="district" class="right">
-
+                <label for="district">Дүүрэг: </label>
+                <select id="district" name="district" class="right">
                 </select>
             </div>
             <div class="textbox">
-                <label for="committee">Хороо</label>
-                <select name="committee" class="right">
+                <label for="committee">Хороо: </label>
+                <select id="committee" name="committee" class="right">
                     <option value="1">1-р хороо</option>
                     <option value="2">2-р хороо</option>
                     <option value="3">3-р хороо</option>
@@ -36,22 +35,21 @@
             </div>
             <div class="textbox">
                 <label for="appartment">Байр :</label>
-                <input type="text" id="appartment" name="appartment" class="right">
+                <input type="text" id="appartment" name="appartment" class="right" required>
             </div>
             <div class="textbox">
                 <label for="room">Тоот :</label>
-                <input type="text" id="room" name="room" class="right">
+                <input type="text" id="room" name="room" class="right"required>
             </div>
             <div class="textbox">
                 <label for="problem">Асуудал :</label>
-                <textarea name="problem" id="prblem" cols="30" rows="10" class="right"></textarea>
+                <textarea name="problem" id="problem" cols="30" rows="10" class="right"></textarea>
             </div>
-            <a href="/src/order.html">
-                <button type="button" class="button">
-                   Захиалах
-                </button>
-               </a>
+            
+                <button type="button" class = "button" onclick="validateForm()">Захиалах</button>
+               
         </form>
+    </form>
     </div>
 
     <script src="/src/script.js"></script>
