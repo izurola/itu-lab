@@ -125,6 +125,20 @@ for (var key in dist_list[com_sel.value].committee) {
     com_sel.appendChild(option);
 }
 
+function ShowError(id) {
+    var alert = document.getElementById("alert");
+    var div = document.createElement("div");
+    div.text = "must be filled put";
+    alert.appendChild(div);
+}
+
+
+function HideError(id) {
+    var alert = document.getElementById("alert");
+    var div = document.createElement("div");
+    div.text = " ";
+    alert.appendChild(div);
+}
 
 function validateForm() {
     var district = document.getElementById("district").value;
@@ -134,13 +148,13 @@ function validateForm() {
 
     if (district === "") {
         alert("District must be filled out");
+        ShowError(district);
         return false;
     }
+    else HideError(district)
 
     if (committee === "") {
-        var alert = document.getElementsByName("alert");
-        alert[0].innerHTML = "Committee must be filled out";
-        
+        alert("Committee must be filled out");
         return false;
     }
 
