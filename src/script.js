@@ -11,22 +11,22 @@ function validateForm() {
 
     if (committee === "") {
         alert("Committee must be filled out");
-        return;
+        return false;
     }
 
     if (appartment === "") {
         alert("Apartment must be filled out");
-        return ;
+        return false;
     }
     
 
     if (room === "") {
         alert("Room must be filled out");
-        return ;
+        return false ;
     }
     
     alert("You have successfully registered!");
-    return ; // Allow the form to submit
+    return true; // Allow the form to submit
 }
 
 
