@@ -77,6 +77,15 @@ textarea {
   /* place-items: center; */
 }
 
+.error {
+  float: right;
+  margin-top: 12px;
+  width: 40%;
+  margin-right: 185px;
+  color: red;
+  font-weight: bold;
+}
+
 .center{
     margin: auto;
     width: 50%;

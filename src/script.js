@@ -125,51 +125,43 @@ for (var key in dist_list[com_sel.value].committee) {
     com_sel.appendChild(option);
 }
 
-function ShowError(id) {
-    var alert = document.getElementById("alert");
-    var div = document.createElement("div");
-    div.text = "must be filled put";
-    alert.appendChild(div);
-}
-
-
-function HideError(id) {
-    var alert = document.getElementById("alert");
-    var div = document.createElement("div");
-    div.text = " ";
-    alert.appendChild(div);
-}
-
 function validateForm() {
     var district = document.getElementById("district").value;
     var committee = document.getElementById("committee").value;
     var appartment = document.getElementById("appartment").value;
     var room = document.getElementById("room").value;
+    const error = document.getElementById('formErrors');
+    const Err = document.createElement('p');
+    Err.classList.add('error');
+    error.innerHTML = ''; 
 
     if (district === "") {
-        alert("District must be filled out");
-        ShowError(district);
+        Err.textContent = 'District must be filled out.';
+        error.appendChild(Err);
         return false;
-    }
-    else HideError(district)
+        
+    }else Err.textContent = "";
 
     if (committee === "") {
-        alert("Committee must be filled out");
+        Err.textContent = 'Committee must be filled out.';
+        error.appendChild(Err);
         return false;
-    }
+    }else Err.textContent = "";
 
     if (appartment === "") {
-        alert("Apartment must be filled out");
+        Err.textContent = 'Appartment must be filled out.';
+        error.appendChild(Err);
         return false;
-    }
+    }else Err.textContent = "";
     
 
     if (room === "") {
-        alert("Room must be filled out");
-        return false ;
-    }
-    
-    alert("You have successfully registered!");
+        Err.textContent = 'Room must be filled out.';
+        error.appendChild(Err);
+        return false;
+    }else Err.textContent = "";
+
+    alert("You have successfully submitted!");
     return true;
 }
 
