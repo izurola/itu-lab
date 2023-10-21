@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="registrationForm"  action="/src/order.html" method="post">
+        <form id="registrationForm">
             <h1>Сууц өмчлөгчдийн холбоо</h1>
             <div class="textbox">
                 <label for="district">Дүүрэг: </label>
@@ -36,9 +36,11 @@
                 <textarea name="problem" id="problem" cols="30" rows="10" class="right"></textarea>
             </div>
             <div class="textbox" id="formErrors">
-                
             </div>
             <button type="button" class = "button" onclick="validateForm()">Илгээх</button>
+            <div>
+                <button type="button" class = "button-location" onclick="getCurrentPosition()">Get Current Location</button>
+            </div>
         </form>
     </form>
     </div>

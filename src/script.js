@@ -162,8 +162,19 @@ function validateForm() {
     }else Err.textContent = "";
 
     alert("You have successfully submitted!");
+    window.location = '/src/order.html';
+
     return true;
 }
 
-
-
+function getCurrentPosition(){
+    const successCallback = (position) => {
+        console.log(position);
+      };
+      
+      const errorCallback = (error) => {
+        console.log(error);
+      };
+      
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+}
