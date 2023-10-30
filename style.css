@@ -2,6 +2,8 @@ body
 {
   background-image: url("assets/river.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /* height: 900px; */
 }
 
