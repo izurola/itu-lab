@@ -2,7 +2,7 @@
 var dist_list = {
     "bra": {
         name: "Багануур",
-        totalCommittee: 5,
+        totalCommittee: 4,
         committee: {}
     },
     "bgh": {
@@ -17,32 +17,32 @@ var dist_list = {
     },
     "bzr": {
         name: "Баянзүрх",
-        totalCommittee: 10,
+        totalCommittee: 11,
         committee: {}
     },
     "nal": {
         name: "Налайх",
-        totalCommittee: 5,
+        totalCommittee: 3,
         committee: {}
     },
     "son": {
         name: "Сонгинохайрхан",
-        totalCommittee: 10,
+        totalCommittee: 12,
         committee: {}
     },
     "suh": {
         name: "Сүхбаатар",
-        totalCommittee: 10,
+        totalCommittee: 13,
         committee: {}
     },
     "han": {
         name: "Хан-Уул",
-        totalCommittee: 10,
+        totalCommittee: 14,
         committee: {}
     },
     "chg": {
         name: "Чингэлтэй",
-        totalCommittee: 10,
+        totalCommittee: 9,
         committee: {}
     },
 }
@@ -55,7 +55,7 @@ for (var key in dist_list) {
     }
 
     if (key === "bra") {
-        for (var i = 1; i <= 5; i++) {
+        for (var i = 1; i <= 4; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
@@ -73,37 +73,37 @@ for (var key in dist_list) {
     }
 
     if (key === "bzr") {
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 11; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
     if (key === "nal") {
-        for (var i = 1; i <= 5; i++) {
+        for (var i = 1; i <= 3; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
     if (key === "son") {
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 12; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
     if (key === "suh") {
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 13; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
     if (key === "han") {
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 14; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
     if (key === "chg") {
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 9; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
