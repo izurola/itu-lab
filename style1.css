@@ -38,8 +38,10 @@ body {
  }
 
  button {
-  background-color: #FF0000;
+  background-color: purple;
   color: white;
   padding: 10px 20px;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
