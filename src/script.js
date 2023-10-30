@@ -1,97 +1,86 @@
 
 var dist_list = {
-    "bra" : {
+    "bra": {
         name: "Багануур",
-        committee : {}
+        totalCommittee: 20,
+        committee: {}
     },
-    "bgh" : {
+    "bgh": {
         name: "Багахангай",
-        committee : {}
+        totalCommittee: 20,
+        committee: {}
     },
-    "bgl" : {
+    "bgl": {
         name: "Баянгол",
-        committee : {}
+        totalCommittee: 29,
+        committee: {}
     },
-    "bzr" : {
+    "bzr": {
         name: "Баянзүрх",
-        committee : {}
+        totalCommittee: 30,
+        committee: {}
     },
-    "nal" : {
+    "nal": {
         name: "Налайх",
-        committee : {}
+        totalCommittee: 20,
+        committee: {}
     },
-    "son" : {
+    "son": {
         name: "Сонгинохайрхан",
-        committee : {}
+        totalCommittee: 29,
+        committee: {}
     },
-    "suh" : {
+    "suh": {
         name: "Сүхбаатар",
-        committee : {}
+        totalCommittee: 21,
+        committee: {}
     },
-    "han" : {
+    "han": {
         name: "Хан-Уул",
-        committee : {}
+        totalCommittee: 24,
+        committee: {}
     },
-    "chg" : {
+    "chg": {
         name: "Чингэлтэй",
-        committee : {}
+        totalCommittee: 19,
+        committee: {}
     },
 }
 
-for(var key in dist_list) {
-    if(key === "bra") {
-        for (var i = 1 ; i <= 20 ; i ++){
+for (var key in dist_list) {
+    if (key === "bra" || key == "han" || key == "chg" || key == "nal" || key == "bgh") {
+        for (var i = 1; i <= dist_list[key].totalCommittee; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
-    if(key === "bzr") {
-        for (var i = 1 ; i <= 28 ; i ++){
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
         dist_list[key].committee[29] = "41 хороо";
         dist_list[key].committee[30] = "43 хороо";
     }
-    if(key === "han"){
-        for (var i = 1 ; i <= 24 ; i++){
-            dist_list[key].committee[i] = i + " хороо";
-        }
-    }
-    if(key === "bgl"){
-        for (var i = 1 ; i <= 26 ; i++){
+    if (key === "bgl") {
+        for (var i = 1; i <= 26; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
         dist_list[key].committee[27] = "28 хороо";
         dist_list[key].committee[28] = "33 хороо";
         dist_list[key].committee[29] = "37 хороо";
     }
-    if(key === "suh"){
-        for (var i = 1 ; i <= 20 ; i++){
+    if (key === "suh") {
+        for (var i = 1; i <= 20; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
         dist_list[key].committee[21] = "25 хороо";
     }
-    if(key === "son"){
-        for (var i = 1 ; i <= 29 ; i++){
+    if (key === "son") {
+        for (var i = 1; i <= 29; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
         dist_list[key].committee[30] = "31 хороо";
         dist_list[key].committee[31] = "32 хороо";
         dist_list[key].committee[32] = "37 хороо";
-    }
-    if(key === "chg"){
-        for (var i = 1 ; i <= 19 ; i++){
-            dist_list[key].committee[i] = i + " хороо";
-        }
-    }
-    if(key === "nal"){
-        for (var i = 1 ; i <= 20 ; i++){
-            dist_list[key].committee[i] = i + " хороо";
-        }   
-    }
-    if(key === "bgh"){
-        for (var i = 1 ; i <= 20 ; i++){
-            dist_list[key].committee[i] = i + " хороо";
-        }   
     }
 }
 
@@ -107,7 +96,7 @@ for (var key in dist_list) {
 
 var com_sel = document.getElementById("committee");
 
-dist_sel.addEventListener("change", function() {
+dist_sel.addEventListener("change", function () {
     var selected = this.value;
     com_sel.innerHTML = "";
     for (var key in dist_list[selected].committee) {
@@ -133,33 +122,33 @@ function validateForm() {
     const error = document.getElementById('formErrors');
     const Err = document.createElement('p');
     Err.classList.add('error');
-    error.innerHTML = ''; 
+    error.innerHTML = '';
 
     if (district === "") {
         Err.textContent = 'District must be filled out.';
         error.appendChild(Err);
         return false;
-        
-    }else Err.textContent = "";
+
+    } else Err.textContent = "";
 
     if (committee === "") {
         Err.textContent = 'Committee must be filled out.';
         error.appendChild(Err);
         return false;
-    }else Err.textContent = "";
+    } else Err.textContent = "";
 
     if (appartment === "") {
         Err.textContent = 'Appartment must be filled out.';
         error.appendChild(Err);
         return false;
-    }else Err.textContent = "";
-    
+    } else Err.textContent = "";
+
 
     if (room === "") {
         Err.textContent = 'Room must be filled out.';
         error.appendChild(Err);
         return false;
-    }else Err.textContent = "";
+    } else Err.textContent = "";
 
     alert("You have successfully submitted!");
     window.location = '/src/order.html';
@@ -167,14 +156,14 @@ function validateForm() {
     return true;
 }
 
-function getCurrentPosition(){
+function getCurrentPosition() {
     const successCallback = (position) => {
         console.log(position);
-      };
-      
-      const errorCallback = (error) => {
+    };
+
+    const errorCallback = (error) => {
         console.log(error);
-      };
-      
-      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    };
+
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 }
