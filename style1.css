@@ -31,3 +31,8 @@ body {
     font-size: 18px;
     margin: 10px 0;
   }
+
+.button-container {
+   text-align: center;
+   margin-top: 20px;
+ }
