@@ -53,19 +53,19 @@ for (var key in dist_list) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
-    if (key === "bzr") {
+    if (key === "bra") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
-    if (key === "bzr") {
+    if (key === "bgh") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
     
-    if (key === "bzr") {
+    if (key === "bgl") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
@@ -77,31 +77,31 @@ for (var key in dist_list) {
         }
     }
 
-    if (key === "bzr") {
+    if (key === "nal") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
-    if (key === "bzr") {
+    if (key === "son") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
-    if (key === "bzr") {
+    if (key === "suh") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
-    if (key === "bzr") {
+    if (key === "han") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
 
-    if (key === "bzr") {
+    if (key === "chg") {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
