@@ -2,53 +2,53 @@
 var dist_list = {
     "bra": {
         name: "Багануур",
-        totalCommittee: 20,
+        totalCommittee: 5,
         committee: {}
     },
     "bgh": {
         name: "Багахангай",
-        totalCommittee: 20,
+        totalCommittee: 5,
         committee: {}
     },
     "bgl": {
         name: "Баянгол",
-        totalCommittee: 29,
+        totalCommittee: 10,
         committee: {}
     },
     "bzr": {
         name: "Баянзүрх",
-        totalCommittee: 30,
+        totalCommittee: 10,
         committee: {}
     },
     "nal": {
         name: "Налайх",
-        totalCommittee: 20,
+        totalCommittee: 5,
         committee: {}
     },
     "son": {
         name: "Сонгинохайрхан",
-        totalCommittee: 29,
+        totalCommittee: 10,
         committee: {}
     },
     "suh": {
         name: "Сүхбаатар",
-        totalCommittee: 21,
+        totalCommittee: 10,
         committee: {}
     },
     "han": {
         name: "Хан-Уул",
-        totalCommittee: 24,
+        totalCommittee: 10,
         committee: {}
     },
     "chg": {
         name: "Чингэлтэй",
-        totalCommittee: 19,
+        totalCommittee: 10,
         committee: {}
     },
 }
 
 for (var key in dist_list) {
-    if (key === "bra" || key == "han" || key == "chg" || key == "nal" || key == "bgh") {
+    if (key === "bra" || key == "bgh" || key == "bgl" || key == "bzr" || key == "nal" || key == "son" || key == "suh" || key == "han" || key == "chg") {
         for (var i = 1; i <= dist_list[key].totalCommittee; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
