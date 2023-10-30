@@ -123,7 +123,15 @@ function validateForm() {
     const Err = document.createElement('p');
     Err.classList.add('error');
     error.innerHTML = '';
+    var isProper = IsProperInfos(district, committee, appartment, room, Err, error)
+    console.log(isProper);
+    if (isProper == false)
+        return false;
+    alert("You have successfully submitted!");
+    window.location = '/src/order.html';
+}
 
+function IsProperInfos(district, committee, appartment, room, Err, error) {
     if (district === "") {
         Err.textContent = 'District must be filled out.';
         error.appendChild(Err);
@@ -149,10 +157,6 @@ function validateForm() {
         error.appendChild(Err);
         return false;
     } else Err.textContent = "";
-
-    alert("You have successfully submitted!");
-    window.location = '/src/order.html';
-
     return true;
 }
 
