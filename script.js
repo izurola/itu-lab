@@ -128,7 +128,7 @@ function validateForm() {
     if (isProper == false)
         return false;
     alert("You have successfully submitted!");
-    window.location = '/src/order.html';
+    window.location = '/order.html';
 }
 
 function IsProperInfos(district, committee, appartment, room, Err, error) {
