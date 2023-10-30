@@ -57,33 +57,55 @@ for (var key in dist_list) {
         for (var i = 1; i <= 28; i++) {
             dist_list[key].committee[i] = i + " хороо";
         }
-        dist_list[key].committee[29] = "41 хороо";
-        dist_list[key].committee[30] = "43 хороо";
     }
-    if (key === "bgl") {
-        for (var i = 1; i <= 26; i++) {
-            dist_list[key].committee[i] = i + " хороо";
-        }
-        dist_list[key].committee[27] = "28 хороо";
-        dist_list[key].committee[28] = "33 хороо";
-        dist_list[key].committee[29] = "37 хороо";
-    }
-    if (key === "suh") {
-        for (var i = 1; i <= 20; i++) {
-            dist_list[key].committee[i] = i + " хороо";
-        }
-        dist_list[key].committee[21] = "25 хороо";
-    }
-    if (key === "son") {
-        for (var i = 1; i <= 29; i++) {
-            dist_list[key].committee[i] = i + " хороо";
-        }
-        dist_list[key].committee[30] = "31 хороо";
-        dist_list[key].committee[31] = "32 хороо";
-        dist_list[key].committee[32] = "37 хороо";
-    }
-}
 
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+    
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
+
+    if (key === "bzr") {
+        for (var i = 1; i <= 28; i++) {
+            dist_list[key].committee[i] = i + " хороо";
+        }
+    }
 
 var dist_sel = document.getElementById("district");
 
