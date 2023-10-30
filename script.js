@@ -53,6 +53,7 @@ for (var key in dist_list) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
+
     if (key === "bra") {
         for (var i = 1; i <= 5; i++) {
             dist_list[key].committee[i] = i + " хороо";
@@ -106,6 +107,7 @@ for (var key in dist_list) {
             dist_list[key].committee[i] = i + " хороо";
         }
     }
+}
 
 var dist_sel = document.getElementById("district");
 
