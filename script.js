@@ -201,19 +201,36 @@ function Calculate() {
     const conversionType = document.getElementById('conversionType').value;
     let result = 0;
 
-    if (conversionType === 'C_To_F')
-    {
+    if (conversionType === 'C_To_F') {
         result = (temperature * 9 / 5) + 32;
     }
-    else if (conversionType === 'F_To_C') 
-    {
+    else if (conversionType === 'F_To_C') {
         result = (temperature - 32) * 5 / 9;
     }
 
     document.getElementById('result').value = result;
 }
 
-function ChangeToSecond()
-{
+function ChangeToSecond() {
     window.location.href = 'dasgal2.html';
+}
+
+function SelectFruit() {
+    // const firstSel = document.getElementById('fruits');
+    // const secondSel = document.getElementById('secondFruits');
+    // const selectedOption = firstSel.options[firstSel.selectedIndex];
+    // const newOption = document.createElement('option');
+    // newOption.value = selectedOption.value;
+    // newOption.text = selectedOption.text;
+    // secondSel.appendChild(newOption);
+    // firstSel.remove(firstSel.selectedIndex);
+
+    const originalSelect = document.getElementById('fruits');
+    const movedSelect = document.getElementById('secondFruits');
+    const selectedOption = originalSelect.options[originalSelect.selectedIndex];
+    const newOption = document.createElement('option');
+    newOption.value = selectedOption.value;
+    newOption.text = selectedOption.text;
+    movedSelect.appendChild(newOption);
+    originalSelect.remove(originalSelect.selectedIndex);
 }

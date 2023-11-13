@@ -8,19 +8,24 @@
 <body>
     <div class="content">
         <div class="success-message">
-            <select id="fruits">
-                <option value="apple">Apple</option>
-                <option value="orange">Orange</option>
-                <option value="peach">Peach</option>
-                <option value="Watermelon">Watermelon</option>
-                <option value="Mange">Mango</option>
-            </select>
-            <input type="number" id="tempInput">
-            <input type="number" id="result" readonly>
-        </div>
-        <div class="button-container">
-                <button onclick="Calculate()">Хувиргах</button>
-            </a>
+            <!-- <form action="" method="get"> -->
+            <form>
+                <select id="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="peach">Peach</option>
+                    <option value="Watermelon">Watermelon</option>
+                    <option value="Mange">Mango</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit" onclick="SelectFruit()">
+                <br><br>
+                <div class="moved-fruits">
+                    <select id="secondFruits">
+
+                    </select>
+                </div>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
