@@ -8,8 +8,7 @@
 <body>
     <div class="content">
         <div class="success-message">
-            <!-- <form action="" method="get"> -->
-            <form>
+            <form id="fruitForm">
                 <select id="fruits">
                     <option value="apple">Apple</option>
                     <option value="orange">Orange</option>
@@ -18,17 +17,14 @@
                     <option value="Mange">Mango</option>
                 </select>
                 <br><br>
-                <input type="submit" value="Submit" onclick="SelectFruit()">
+                <input type="button" value="Submit" onclick="SelectFruit()">
                 <br><br>
-                <div class="moved-fruits">
-                    <select id="secondFruits">
-
-                    </select>
-                </div>
             </form>
         </div>
+        <select id="secondFruits">
+        </select>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>
