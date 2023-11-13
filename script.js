@@ -65,7 +65,7 @@ for (var key in dist_list) {
             dist_list[key].committee[i] = i + "-р хороо";
         }
     }
-    
+
     if (key === "bgl") {
         for (var i = 1; i <= 10; i++) {
             dist_list[key].committee[i] = i + "-р хороо";
@@ -196,7 +196,19 @@ function getCurrentPosition() {
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 }
 
-function Calculate()
-{
-    
+function Calculate() {
+    const temperature = parseFloat(document.getElementById('tempInput').value);
+    const conversionType = document.getElementById('conversionType').value;
+    let result = 0;
+
+    if (conversionType === 'C_To_F')
+    {
+        result = (temperature * 9 / 5) + 32;
+    }
+    else if (conversionType === 'F_To_C') 
+    {
+        result = (temperature - 32) * 5 / 9;
+    }
+
+    document.getElementById('result').value = result;
 }
