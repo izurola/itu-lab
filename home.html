@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
+
 <body>
-  <div class="content">
-    <div class="success-message">
-      <h1>Successfully Submitted</h1>
-      <p>Thank you for giving feedback.</p>
+    <div class="content">
+        <div class="success-message">
+            <select id="conversionType">
+                <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+            </select>
+            <input type="number" id="tempInput">
+            <input type="number" id="result" readonly>
+        </div>
+        <div class="button-container">
+                <button onclick="Calculate()">Хувиргах</button>
+            </a>
+        </div>
     </div>
-    <div class="button-container">
-      <a href="home.html">
-        <button>Дахин дуудлага өгөх</button>
-      </a>
-    </div>
-  </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

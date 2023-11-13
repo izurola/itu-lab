@@ -195,3 +195,8 @@ function getCurrentPosition() {
 
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 }
+
+function Calculate()
+{
+    
+}
