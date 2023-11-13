@@ -212,3 +212,8 @@ function Calculate() {
 
     document.getElementById('result').value = result;
 }
+
+function ChangeToSecond()
+{
+    window.location.href = 'dasgal2.html';
+}
