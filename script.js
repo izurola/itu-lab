@@ -21,3 +21,29 @@ function convertCtoF() {
             console.error('Error:', error);
         });
 }
+function buttonClicked() {
+    const firstSelect = document.getElementById('firstSelect');
+    const selectedOption = firstSelect.options[firstSelect.selectedIndex];
+    const selectedFruit = selectedOption.value;
+
+    fetch('http://localhost:3000/selectFruit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ fruit: selectedFruit })
+    })
+        .then(response => response.json())
+        .then(data => {
+            const secondSelect = document.getElementById('secondSelect');
+            const newOption = document.createElement('option');
+            newOption.value = selectedFruit;
+            newOption.text = selectedOption.text;
+            secondSelect.appendChild(newOption);
+
+            firstSelect.remove(selectedOption.index);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}

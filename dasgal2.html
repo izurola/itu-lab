@@ -2,29 +2,24 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Fruit Selection</title>
 </head>
 
 <body>
-    <div class="content">
-        <div class="success-message">
-            <form id="fruitForm">
-                <select id="fruits">
-                    <option value="apple">Apple</option>
-                    <option value="orange">Orange</option>
-                    <option value="peach">Peach</option>
-                    <option value="Watermelon">Watermelon</option>
-                    <option value="Mange">Mango</option>
-                </select>
-                <br><br>
-                <input type="button" value="Submit" onclick="SelectFruit()">
-                <br><br>
-            </form>
-        </div>
-        <select id="secondFruits">
-        </select>
-        <script src="script.js"></script>
-    </div>
+    <h2>Select Fruit:</h2>
+    <select id="firstSelect">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+        <option value="kiwi">Kiwi</option>
+    </select>
+
+    <button onclick="buttonClicked()">Send Fruit</button>
+
+    <h2>Second List:</h2>
+    <select id="secondSelect">
+    <script src="script.js"></script>
 </body>
 
 </html>
