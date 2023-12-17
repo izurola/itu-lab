@@ -2,25 +2,19 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style1.css"> -->
 </head>
 
 <body>
-    <div class="content">
-        <button onclick="ChangeToSecond()">Dasgal2</button>
-        <div class="success-message">
-            <select id="conversionType">
-                <option value="C_To_F">Celsius to Fahrenheit</option>
-                <option value="F_To_C">Fahrenheit to Celsius</option>
-            </select>
-            <input type="number" id="tempInput">
-            <input type="number" id="result" readonly>
-        </div>
-        <div class="button-container">
-                <button onclick="Calculate()">Хувиргах</button>
-            </a>
-        </div>
-    </div>
+    <h2>Fahrenheit to Celsius</h2>
+    <input type="number" id="fahrenheitInput" placeholder="Enter Fahrenheit" />
+    <button onclick="convertFtoC()">Convert</button>
+    <p id="resultFtoC"></p>
+
+    <h2>Celsius to Fahrenheit</h2>
+    <input type="number" id="celsiusInput" placeholder="Enter Celsius" />
+    <button onclick="convertCtoF()">Convert</button>
+    <p id="resultCtoF"></p>
     <script src="script.js"></script>
 </body>
 
